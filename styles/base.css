@@ -122,3 +122,16 @@ footer p {
   text-align: center;
   padding-top: 0.5rem;
 }
+.chamber h2 {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+.chamber p{
+  font-size: .9rem;
+  padding-bottom: .5rem;
+}
+.chamber li{
+  font-size: .9rem;
+  padding-bottom: .5rem;
+}
+
