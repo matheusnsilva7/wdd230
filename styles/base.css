@@ -17,8 +17,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 110rem;
+  margin: 0 auto;
   background: #1d4d72;
   gap: 1rem;
+  position: relative;
 }
 header img {
   width: 5rem;
@@ -35,6 +38,8 @@ nav ul {
   display: flex;
   flex-direction: column;
   background-color: black;
+  max-width: 110rem;
+  margin: 0 auto;
 }
 nav ul li {
   text-align: center;
@@ -110,6 +115,8 @@ footer {
   display: grid;
   place-content: center;
   padding: 1rem;
+  max-width: 110rem;
+  margin: 0 auto;
 }
 footer p {
   color: white;
@@ -126,12 +133,33 @@ footer p {
   font-size: 1rem;
   padding: 0.5rem 0;
 }
-.chamber p{
-  font-size: .9rem;
-  padding-bottom: .5rem;
+.chamber p {
+  font-size: 0.9rem;
+  padding-bottom: 0.5rem;
 }
-.chamber li{
-  font-size: .9rem;
-  padding-bottom: .5rem;
+.chamber li {
+  font-size: 0.9rem;
+  padding-bottom: 0.5rem;
 }
-
+.darkmode {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.dark {
+  background-color: #777777;
+}
+.dark h1,
+.dark main li,
+.dark main span,
+.dark main h3 {
+  color: white;
+}
+.dark h1 {
+  border-bottom: 1.8px solid rgb(255, 255, 255);
+}
+.dark section{
+  background-color: rgba(255, 255, 255, 0.4);
+}
