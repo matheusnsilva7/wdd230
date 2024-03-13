@@ -1,0 +1,29 @@
+@media (min-width: 1000px) {
+  nav img {
+    width: 2.5rem;
+  }
+  nav {
+    padding: 0 4rem;
+    max-width: 110rem;
+    margin: 0 auto;
+  }
+  .mobile {
+    display: none;
+  }
+  .mobile-close {
+    display: none;
+  }
+  nav ul {
+    position: static;
+    background-color: transparent;
+    height: auto;
+    display: flex;
+    width: auto;
+    padding: 1rem;
+    gap: 5rem;
+    transform: translateX(0);
+  }
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+}
