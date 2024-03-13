@@ -9,3 +9,7 @@ mobile.addEventListener("click", () => {
 mobileClose.addEventListener("click", () => {
   links.classList.remove("active");
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("lastModified").textContent = document.lastModified;
+});
