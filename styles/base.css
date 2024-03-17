@@ -195,7 +195,7 @@ picture img {
   top: 1rem;
   left: 1rem;
   font-size: 1rem;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 1rem;
   box-shadow: 0 2px 6px black;
 }
