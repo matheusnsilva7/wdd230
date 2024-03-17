@@ -78,6 +78,7 @@ h1 {
   padding-bottom: 1rem;
   width: 22rem;
   box-shadow: 0 2px 5px black;
+  margin: 0 auto;
 }
 .card h2 {
   background: #1d4d72;
@@ -102,10 +103,10 @@ h3 {
   font-weight: 500;
 }
 .card span {
-  text-align: center;
   font-size: 1rem;
-  display: block;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
 }
 .card span:first-of-type {
   padding: 1rem 0;
@@ -180,4 +181,24 @@ nav ul li:not(.menu-mobile) {
 }
 .show {
   display: block !important;
+}
+picture img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.templo {
+  position: relative;
+}
+.templo span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 2px 6px black;
+}
+iframe {
+  margin: 0 auto;
 }

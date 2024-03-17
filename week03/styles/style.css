@@ -1,0 +1,14 @@
+img {
+  display: block;
+  padding-bottom: 1rem;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

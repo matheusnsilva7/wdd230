@@ -30,4 +30,11 @@
   nav ul li:not(.menu-mobile){
     display: block;
   }
+  .templo {
+    grid-column: span 2;
+  }
+  iframe {
+    grid-column: span 2;
+    width: 100%
+  }
 }

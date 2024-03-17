@@ -2,6 +2,7 @@ const darkmode = document.querySelector(".darkmode");
 const body = document.querySelector("body");
 const mobile = document.querySelector(".mobile");
 const nav = document.querySelectorAll("nav ul li");
+const visit = document.querySelector("#visits");
 
 darkmode.addEventListener("click", () => {
   body.classList.toggle("dark");
@@ -13,10 +14,14 @@ darkmode.addEventListener("click", () => {
 
 window.addEventListener("load", () => {
   const mode = localStorage.getItem("darkmode") === "true";
+  localStorage.setItem("visits", +localStorage.getItem("visits") + 1);
+
   darkmode.textContent = mode ? "🌞" : "🌙";
   if (mode) {
     body.classList.toggle("dark");
   }
+
+  visit.textContent = localStorage.getItem("visits");
 });
 
 mobile.addEventListener("click", () => {
