@@ -147,6 +147,7 @@ footer p {
   right: 1rem;
   font-size: 3rem;
   cursor: pointer;
+  color: white;
 }
 .dark {
   background-color: #777777;
@@ -160,16 +161,16 @@ footer p {
 .dark h1 {
   border-bottom: 1.8px solid rgb(255, 255, 255);
 }
-.dark section{
+.dark section {
   background-color: rgba(255, 255, 255, 0.4);
 }
-nav ul li:not(.menu-mobile){
+nav ul li:not(.menu-mobile) {
   display: none;
 }
-.menu-mobile{
+.menu-mobile {
   text-align: end;
 }
-.menu-mobile button{
+.menu-mobile button {
   color: white;
   background-color: transparent;
   font-size: 2rem;
@@ -177,6 +178,6 @@ nav ul li:not(.menu-mobile){
   margin-right: 2rem;
   cursor: pointer;
 }
-.show{
+.show {
   display: block !important;
 }
