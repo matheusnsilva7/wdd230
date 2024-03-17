@@ -24,4 +24,10 @@
   h3 {
     padding-top: 4rem;
   }
+  .menu-mobile {
+    display: none;
+  }
+  nav ul li:not(.menu-mobile){
+    display: block;
+  }
 }

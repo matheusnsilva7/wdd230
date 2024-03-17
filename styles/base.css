@@ -53,11 +53,11 @@ nav ul li a {
   padding: 1rem 0;
   text-decoration: none;
 }
-nav ul li:hover {
-  background-color: #643219;
+nav ul li:hover:not(.menu-mobile) {
+  background-color: #669933;
 }
 .active {
-  background-color: #643219;
+  background-color: #669933;
 }
 main {
   padding: 1.5rem;
@@ -162,4 +162,21 @@ footer p {
 }
 .dark section{
   background-color: rgba(255, 255, 255, 0.4);
+}
+nav ul li:not(.menu-mobile){
+  display: none;
+}
+.menu-mobile{
+  text-align: end;
+}
+.menu-mobile button{
+  color: white;
+  background-color: transparent;
+  font-size: 2rem;
+  border: none;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.show{
+  display: block !important;
 }

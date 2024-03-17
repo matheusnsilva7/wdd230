@@ -1,5 +1,7 @@
 const darkmode = document.querySelector(".darkmode");
 const body = document.querySelector("body");
+const mobile = document.querySelector(".mobile");
+const nav = document.querySelectorAll("nav ul li");
 
 darkmode.addEventListener("click", () => {
   body.classList.toggle("dark");
@@ -14,5 +16,18 @@ window.addEventListener("load", () => {
   darkmode.textContent = mode ? "🌞" : "🌜";
   if (mode) {
     body.classList.toggle("dark");
+  }
+});
+
+mobile.addEventListener("click", () => {
+  nav.forEach((e) => {
+    console.log(e.classList);
+    e.classList.toggle("show");
+  });
+
+  if (nav[0].classList.contains("show")) {
+    mobile.textContent = "✖";
+  } else {
+    mobile.textContent = "☰";
   }
 });
