@@ -6,14 +6,14 @@ const nav = document.querySelectorAll("nav ul li");
 darkmode.addEventListener("click", () => {
   body.classList.toggle("dark");
 
-  const mode = body.classList.contains("dark") ? "🌞" : "🌑";
+  const mode = body.classList.contains("dark") ? "🌞" : "🌙";
   darkmode.textContent = mode;
   localStorage.setItem("darkmode", mode === "🌞" ? true : false);
 });
 
 window.addEventListener("load", () => {
   const mode = localStorage.getItem("darkmode") === "true";
-  darkmode.textContent = mode ? "🌞" : "🌑";
+  darkmode.textContent = mode ? "🌞" : "🌙";
   if (mode) {
     body.classList.toggle("dark");
   }
