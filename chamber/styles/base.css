@@ -9,6 +9,7 @@
 body {
   font-size: 62.5%;
   overflow-x: hidden;
+  
 }
 header {
   background-color: #336699;
@@ -160,4 +161,53 @@ footer h3 {
 footer p {
   font-size: 1rem;
   color: #ffffff;
+}
+.discover {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem 0;
+  gap: 1rem;
+  margin: 0 1rem;
+}
+.discover section img {
+  width: 250px;
+  height: 400px;
+  object-fit: cover;
+  padding: 1rem 0;
+  display: block;
+  margin: 0 auto;
+}
+.discover section img:hover {
+  transform: scale(1.05);
+}
+.discover aside {
+  border: 1px solid rgb(146, 146, 146);
+  border-radius: 0.3rem;
+  background: #f7f7f7;
+  height:20rem;
+  margin-top: 1rem;
+}
+.discover aside h2 {
+  padding: 1rem;
+  text-align: center;
+}
+
+.discover aside h3 {
+  text-align: center;
+  padding-top: 3rem;
+  font-size: 0.8rem;
+}
+.discover aside span {
+  font-size: 3rem;
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+}
+.discover aside p {
+  color: black;
+  font-size: 0.9rem;
+}
+.discover section p{
+  text-align: center;
+  font-size: 1rem;
 }
