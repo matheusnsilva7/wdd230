@@ -41,7 +41,7 @@ input[type="range"] {
   display: inline-block;
   font-weight: bold;
   margin-left: 10px;
-  vertical-align: middle;
+  font-size: 15px;
 }
 
 form button {
@@ -50,6 +50,10 @@ form button {
   font-size: 16px;
   cursor: pointer;
   border: none;
+}
+.pageRating{
+  display: flex;
+  align-items: center;
 }
 
 form button:hover {
