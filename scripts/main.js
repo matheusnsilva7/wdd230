@@ -20,8 +20,9 @@ window.addEventListener("load", () => {
   if (mode) {
     body.classList.toggle("dark");
   }
-
-  visit.textContent = localStorage.getItem("visits");
+  if (visit) {
+    visit.textContent = localStorage.getItem("visits");
+  }
 });
 
 mobile.addEventListener("click", () => {
@@ -34,5 +35,20 @@ mobile.addEventListener("click", () => {
     mobile.textContent = "✖";
   } else {
     mobile.textContent = "☰";
+  }
+});
+
+document.querySelector("#rating").addEventListener("change", (e) => {
+  document.querySelector("#rating-count").textContent = e.target.value;
+});
+
+document.querySelector("#confirmPassword").addEventListener("focusout", (e) => {
+  if (e.target.value !== document.querySelector("#password").value) {
+    document.querySelector(
+      ".message"
+    ).textContent = `❗Confirm password DO NOT MATCH!`;
+    e.target.value = "";
+  } else {
+    document.querySelector(".message").textContent = "";
   }
 });

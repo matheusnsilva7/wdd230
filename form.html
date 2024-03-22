@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matheus silva - WDD 230 - Web Frontend Development</title>
+    <meta name="author" content="Matheus silva" />
+    <meta
+      name="description"
+      content="WDD 230 - Web Frontend Development, Matheus silva, course assignment portal"
+    />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
+    <link rel="stylesheet" href="./styles/form.css">
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://avatars.githubusercontent.com/u/94863819?v=4"
+        alt="Profile image"
+      />
+      <span>Matheus silva</span>
+      <div class="darkmode">🌙</div>
+    </header>
+    <nav>
+      <ul>
+        <li class="menu-mobile"><button class="mobile">☰</button></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="./chamber/index.html">Chamber</a></li>
+        <li><a href="./week01/chamber-site-plan.html">Site Plan</a></li>
+        <li class="active"><a href="./form.html">Form</a></li>
+      </ul>
+    </nav>
+    <main>
+      <form action="record.html" method="get">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            pattern="^[a-zA-Z0-9]{8,}$"
+            title="Password must be at least 8 characters long and alphanumeric"
+            required
+          />
+        </div>
+        <div>
+          <label for="confirmPassword">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+          <p class="message"></p>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+            title="Please enter a valid email address"
+            required
+          />
+        </div>
+        <div>
+          <label for="rating">Page Rating:</label>
+          <input
+            type="range"
+            id="rating"
+            name="rating"
+            min="1"
+            max="10"
+            step="1"
+          />
+          <span id="rating-count">5</span>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; <span id="currentYear">2024</span> - Matheus Silva - Brasil</p>
+      <p class="lastModified">
+        Last Modification: <span id="lastModified"></span>
+      </p>
+    </footer>
+    <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
