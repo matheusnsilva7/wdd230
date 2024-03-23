@@ -43,4 +43,33 @@
   .discover aside h2 {
     padding: 2rem;
   }
+  .form aside {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .form div {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form aside h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .form aside p {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+  .form aside ul {
+    font-size: 14px;
+  }
+  .form aside ul li {
+    padding: 10px 0;
+  }
 }

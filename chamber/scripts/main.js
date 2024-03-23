@@ -12,21 +12,27 @@ mobileClose.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("lastModified").textContent = document.lastModified;
-  const day = new Date();
-  const textLocal = localStorage.getItem("text")
-    ? localStorage.getItem("text")
-    : localStorage.setItem("text", day);
+  if (document.getElementById("timestamp")) {
+    document.getElementById("timestamp").value = new Date().toISOString();
+  }
 
-  let daysDifference = Math.floor(
-    (day - new Date(textLocal)) / (1000 * 60 * 60 * 24)
-  );
+  if (text) {
+    document.getElementById("lastModified").textContent = document.lastModified;
+    const day = new Date();
+    const textLocal = localStorage.getItem("text")
+      ? localStorage.getItem("text")
+      : localStorage.setItem("text", day);
 
-  if (isNaN(daysDifference)) {
-    text.textContent = "Welcome! Let us know if you have any questions.";
-  } else if (daysDifference <= 1) {
-    text.textContent = "Back so soon! Awesome!";
-  } else {
-    text.textContent = `You last visited ${daysDifference} days ago.`;
+    let daysDifference = Math.floor(
+      (day - new Date(textLocal)) / (1000 * 60 * 60 * 24)
+    );
+
+    if (isNaN(daysDifference)) {
+      text.textContent = "Welcome! Let us know if you have any questions.";
+    } else if (daysDifference <= 1) {
+      text.textContent = "Back so soon! Awesome!";
+    } else {
+      text.textContent = `You last visited ${daysDifference} days ago.`;
+    }
   }
 });

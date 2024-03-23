@@ -9,7 +9,6 @@
 body {
   font-size: 62.5%;
   overflow-x: hidden;
-  
 }
 header {
   background-color: #336699;
@@ -184,7 +183,7 @@ footer p {
   border: 1px solid rgb(146, 146, 146);
   border-radius: 0.3rem;
   background: #f7f7f7;
-  height:20rem;
+  height: 20rem;
   margin-top: 1rem;
 }
 .discover aside h2 {
@@ -207,7 +206,73 @@ footer p {
   color: black;
   font-size: 0.9rem;
 }
-.discover section p{
+.discover section p {
   text-align: center;
   font-size: 1rem;
+}
+.form aside {
+  display: none;
+}
+.form {
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+  font-size: 13px;
+}
+input:not(:last-of-type),
+textarea,
+select {
+  margin-bottom: 1rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.container{
+  margin: 30vh auto;
+}
+.container h1{
+  text-align: center;
+  font-size: 30px;
+}
+.container p{
+  text-align: center;
+  font-size: 15px;
 }

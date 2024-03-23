@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chamber of Commerce of São Paulo</title>
+    <meta
+      name="description"
+      content="Welcome to the Chamber of Commerce of São Paulo. Promoting local businesses and economic growth."
+    />
+    <link rel="icon" href="./images/favicon.ico" />
+    <meta property="og:title" content="Chamber of Commerce of São Paulo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="image_url" />
+    <meta property="og:url" content="https://example.com" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./images/favicon.ico" alt="logo" />
+        <button class="mobile">☰</button>
+        <ul class="links">
+          <li><button class="mobile-close">✖</button></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="./discover.html">Event</a></li>
+          <li><a href="#">Weather</a></li>
+          <li><a href="#">Spotlights</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="form">
+      <div>
+        <form action="thankyou.html" method="get">
+          <label for="firstName">Applicant's First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+
+          <label for="lastName">Applicant's Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required />
+
+          <label for="title">Applicant's Title/Position:</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            pattern="[A-Za-z -]{7,}"
+            required
+          />
+
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@example.com"
+            required
+          />
+
+          <label for="phone">Mobile Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="organization">Business/Organization Name:</label>
+          <input type="text" id="organization" name="organization" required />
+
+          <label for="membership">Membership Level:</label>
+          <select id="membership" name="membership" required>
+            <option value="NP Membership">NP Membership</option>
+            <option value="Bronze Membership">Bronze Membership</option>
+            <option value="Silver Membership">Silver Membership</option>
+            <option value="Gold Membership">Gold Membership</option>
+          </select>
+
+          <label for="description">Business/Organization Description:</label>
+          <textarea id="description" name="description"></textarea>
+
+          <input type="hidden" id="timestamp" name="timestamp" value="" />
+
+          <input type="submit" value="Submit" />
+        </form>
+        <aside>
+          <h2>Membership Benefits:</h2>
+          <p>
+            Joining our organization comes with a range of benefits tailored to
+            meet your needs:
+          </p>
+          <ul>
+            <li><strong>NP Membership:</strong> No fee, basic benefits</li>
+            <li>
+              <strong>Bronze Membership:</strong> Basic benefits, enhanced
+              benefits
+            </li>
+            <li>
+              <strong>Silver Membership:</strong> Enhanced benefits, event
+              discounts
+            </li>
+            <li>
+              <strong>Gold Membership:</strong> Premium benefits, special
+              events, advertising
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>123 Chamber Street, São Paulo</p>
+        <p>Email: info@sao-paulo-chamber.com</p>
+        <p>Phone: +55 11 1234 5678</p>
+      </div>
+      <div class="development-info">
+        <p>Developed by: Matheus silva</p>
+        <p>WDD 230 Project</p>
+        <p class="lastModified">
+          Last Modification: <span id="lastModified"></span>
+        </p>
+      </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
