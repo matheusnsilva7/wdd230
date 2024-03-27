@@ -202,3 +202,9 @@ picture img {
 iframe {
   margin: 0 auto;
 }
+.weather-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}

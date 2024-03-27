@@ -42,7 +42,7 @@
       <h1>WDD 230: Web Frontend Development</h1>
       <section class="card">
         <h2>Learning Activities</h2>
-        <ul>
+        <ul class="links-learning-Activities">
           <li>
             Week 01: <a href="#">Layout</a> | <a href="#">Media Query</a> |
             <a href="#">JS Pen</a>
@@ -54,13 +54,14 @@
           <li>Week 06:</li>
         </ul>
       </section>
-      <section class="card">
+      <section class="card" id="weather-container">
         <h2>Information</h2>
         <h3>São Paulo, Brazil</h3>
-        <span>🌞 85°F - Sunshine</span>
-        <span
-          >Page visits : <strong id="visits"></strong></span
-        >
+        <span class="weather-info"
+          ><img src="#" alt="weather" id="weather-icon" />
+          <span id="temperature"></span> - <span id="description"></span
+        ></span>
+        <span>Page visits : <strong id="visits"></strong></span>
       </section>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.5420107689647!2d-46.72531622548671!3d-23.584886862455303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce56f1a8089c2d%3A0x27453bbfc5ed3ca2!2sS%C3%A3o%20Paulo%20Brazil%20Temple!5e0!3m2!1sen!2sbr!4v1710698907482!5m2!1sen!2sbr"
@@ -80,5 +81,6 @@
     </footer>
     <script src="./scripts/getDates.js"></script>
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/links.js"></script>
   </body>
 </html>
