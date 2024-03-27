@@ -41,7 +41,7 @@ window.addEventListener("load", () => {
         document.getElementById("description").textContent = `${description}`;
         document.getElementById(
           "weather-icon"
-        ).src = `http://openweathermap.org/img/w/${icon}.png`;
+        ).src = `https://openweathermap.org/img/w/${icon}.png`;
       })
       .catch((error) => {
         console.error("Error fetching weather data:", error);
