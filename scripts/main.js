@@ -4,7 +4,6 @@ const mobile = document.querySelector(".mobile");
 const nav = document.querySelectorAll("nav ul li");
 const visit = document.querySelector("#visits");
 const weatherContainer = document.getElementById("weather-container");
-
 const apiKey = "f26a1d2c7387a78efdda84903fecbb7f";
 const city = "São Paulo";
 
