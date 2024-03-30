@@ -293,10 +293,15 @@ input[type="submit"]:hover {
 }
 .card h2 {
   color: #333;
+  font-size: 1.2rem;
+}
+.card p{
+  font-size: 1rem;
 }
 .card a {
   color: #007bff;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 .card a:hover {
