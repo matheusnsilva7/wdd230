@@ -299,7 +299,7 @@ input[type="submit"]:hover {
   font-size: 1rem;
 }
 .card a {
-  color: #007bff;
+  color: blue;
   text-decoration: none;
   font-size: 1rem;
 }
