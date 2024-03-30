@@ -2,6 +2,7 @@ const mobile = document.querySelector(".mobile");
 const links = document.querySelector(".links");
 const mobileClose = document.querySelector(".mobile-close");
 const text = document.querySelector(".text");
+const directoryContainer = document.querySelector(".directory");
 
 mobile.addEventListener("click", () => {
   links.classList.toggle("active");
@@ -34,5 +35,30 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       text.textContent = `You last visited ${daysDifference} days ago.`;
     }
+  }
+
+  if (directoryContainer) {
+    fetch("data/members.json")
+      .then((response) => response.json())
+      .then((data) => {
+        data.members.forEach((member) => {
+          const memberCard = document.createElement("div");
+          memberCard.classList.add("member");
+
+          memberCard.innerHTML = `
+                  <div class="card">
+                    <h2>${member.name}</h2>
+                    <p>${member.address}</p>
+                    <p>Phone: ${member.phone}</p>
+                    <p>Website: <a href="${member.website}">${member.website}</a></p>
+                    <p>Membership Level: ${member.membership_level}</p>
+                    <p>${member.other_information}</p>
+                    </div>
+                `;
+
+          directoryContainer.appendChild(memberCard);
+        });
+      })
+      .catch((error) => console.error("Error fetching members data:", error));
   }
 });
