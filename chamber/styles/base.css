@@ -95,8 +95,6 @@ li {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  max-width: 110rem;
-  margin: 0 auto;
   padding: 2rem 0;
 }
 .sportlights div {
@@ -129,7 +127,8 @@ li {
   display: grid;
   place-content: center;
 }
-.weather h2 {
+.weather h2,
+.forecast h2 {
   font-size: 2rem;
   text-align: center;
   color: #ffffff;
@@ -137,6 +136,9 @@ li {
 .weather-icon {
   font-size: 7rem;
   text-align: center;
+}
+.weather-details {
+  margin-bottom: 1rem;
 }
 .weather-details p {
   font-size: 1.5rem;
@@ -319,7 +321,7 @@ input[type="submit"]:hover {
 }
 .buttons {
   margin: 2rem auto;
-  width: 500px;
+  width: 300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -339,4 +341,84 @@ input[type="submit"]:hover {
   background-color: #336699;
   color: white;
   border: 2px solid #336699;
+}
+#forecastList {
+  margin: 1rem 0;
+}
+#forecastList li {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+.weather-icon img {
+  width: 10rem;
+  object-fit: cover;
+}
+.text-directory {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.text {
+  text-align: center;
+  padding-top: 1rem;
+}
+#memberssection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 8rem 0;
+  background-color: #f7f7f7;
+}
+.member-card {
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.member-card span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.member-card span:first-of-type {
+ font-size: 1.5rem;
+}
+.member-card p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+.member-card.gold {
+  background-color: #ffd700;
+}
+.member-card.silver {
+  background-color: #c0c0c0;
+}
+#banner {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap:2rem;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#banner p {
+  font-size: 1rem;
+}
+#closeBanner {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.discover-weather img{
+  width: 100px
 }

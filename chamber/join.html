@@ -23,9 +23,9 @@
         <button class="mobile">☰</button>
         <ul class="links">
           <li><button class="mobile-close">✖</button></li>
-          <li><a href="/">Home</a></li>
-          <li><a href="./discover.html">Event</a></li>
-          <li><a href="#">Weather</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./discover.html">Discover</a></li>
+          <li><a href="./join.html">Membership</a></li>
           <li><a href="./directory.html">Directory</a></li>
         </ul>
       </nav>
@@ -61,7 +61,7 @@
           <input type="tel" id="phone" name="phone" required />
 
           <label for="organization">Business/Organization Name:</label>
-          <input type="text" id="organization" name="organization" required />
+          <input type="text" id="organization" name="organization" pattern="[A-Za-z -]{7,}" required />
 
           <label for="membership">Membership Level:</label>
           <select id="membership" name="membership" required>
@@ -80,7 +80,7 @@
           <input type="submit" value="Submit" />
         </form>
         <aside>
-          <h2>Membership Benefits:</h2>
+          <h1>Membership Benefits:</h1>
           <p>
             Joining our organization comes with a range of benefits tailored to
             meet your needs:
