@@ -45,7 +45,6 @@ nav ul {
 nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 2rem 0;
   font-size: 2rem;
 }
 .mobile-close {
@@ -70,7 +69,7 @@ li {
   font-size: 2rem;
   text-align: center;
 }
-.home button {
+.home a {
   width: 20rem;
   margin: 2rem auto;
   background-color: white;
@@ -78,6 +77,8 @@ li {
   border: none;
   padding: 1rem;
   font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
   border-radius: 2rem;
   cursor: pointer;
 }
