@@ -44,7 +44,6 @@ const updateWeather = async () => {
   locationElement.textContent = loc;
 
   const weatherIconElement = document.querySelector(".weather-icon");
-  console.log(weatherIconElement)
   weatherIconElement.innerHTML = `<img src="http://openweathermap.org/img/wn/${currentWeather.weather[0].icon}.png" alt="Weather Icon">`;
 };
 
